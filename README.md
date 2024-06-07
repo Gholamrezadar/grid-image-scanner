@@ -3,14 +3,17 @@ This notebooks implements a simple grid scanner that scans a photo of a 2d grid 
 
 ## Input Image
 from tsoding daily youtube channel
+
 ![grid.png](grid.png)
 
 ## 1. Finding Corners
 Via mouse clicks using a GUI tool
+
 ![corners.png](corners.png)
 
 ## 2. Perspective Transform
 `cv2.getPerspectiveTransform()` and `cv2.warpPerspective()`
+
 ![perspective.png](perspective.png)
 
 ## 3. Grid lines
@@ -26,7 +29,9 @@ Via mouse clicks using a GUI tool
 
 ## 5. Visualizing Seperation
 The processing has distributed the centers of our cells like this *(y axis is just the index of the cell in a given value bucket)*:
+
 ![hist.png](hist.png)
+
 As you can see they're very seperable by thresholding the value of each cell. nice!
 
 *Note: value of each cell is the average of a small region in that cell(near the center of the cell)*
@@ -35,6 +40,7 @@ Let's use a value like **119**.
 
 ## 6. Filled/Empty Estimation
 and Done.
+
 ![estimation.png](estimation.png)
 
 
